@@ -65,3 +65,18 @@ button {
     text-decoration: line-through;
     color: #888;
 }
+
+/* Przycisk usuń */
+#task-list button {
+    margin-left: auto;
+    background-color: #ff5c5c;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#task-list button:hover {
+    background-color: #e04848;
+}

@@ -51,3 +51,43 @@ button.addEventListener("click", function () {
 
     input.value = "";
 });
+
+
+// Obsługa kliknięcia przycisku
+button.addEventListener("click", function () {
+    const taskText = input.value;
+
+    if (taskText.trim() === "") return;
+
+    // Tworzenie elementów
+    const li = document.createElement("li");
+
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+
+    const span = document.createElement("span");
+    span.textContent = taskText;
+
+    const deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "Usuń";
+
+    // Checkbox - oznaczanie jako wykonane
+    checkbox.addEventListener("change", function () {
+        li.classList.toggle("completed");
+    });
+
+    // Usuwanie elementu
+    deleteBtn.addEventListener("click", function () {
+        li.remove();
+    });
+
+    // Dodanie elementów do li
+    li.appendChild(checkbox);
+    li.appendChild(span);
+    li.appendChild(deleteBtn);
+
+    // Dodanie do listy
+    list.appendChild(li);
+
+    input.value = "";
+});
