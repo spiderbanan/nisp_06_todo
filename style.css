@@ -1,0 +1,58 @@
+/* Reset podstawowy */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cała strona */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Kontener */
+.container {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+}
+
+/* Nagłówek */
+h1 {
+    margin-bottom: 15px;
+}
+
+/* Input i button */
+input {
+    padding: 8px;
+    width: 70%;
+    margin-right: 5px;
+}
+
+button {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+/* Lista */
+#task-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+/* Elementy listy */
+#task-list li {
+    background: #eef1f5;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d0d7de;
+    border-radius: 5px;
+}
